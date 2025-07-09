@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+<div class="wrapper">
+<h1 id="head">MY TO-DO LIST</h1>
+
+<div class="container">
+<div class="addingtext">
+<input type="text" id="task" class="size" placeholder="Enter your task here">
+<button id="click" onclick="add()">Add</button></div>
+<div id="task-list" class="size"></div>
+<button id="submit" onclick="save()">Submit</button>
+</div>
+</div>
+<script src="{{url_for('static',filename='scripts.js')}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
