@@ -5,7 +5,7 @@ app = Flask(__name__)
 tasks = []
 @app.route('/')
 def home():
-    return render_template('indexx.html')
+    return render_template('index.html')
 @app.route('/tasks', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 def tasks_list():
     if request.method == 'GET':
